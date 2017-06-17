@@ -1,0 +1,36 @@
+body {
+	background-color: purple;
+	background-repeat: repeat-x;
+	background-position: right top;
+	background-attachment: fixed; 
+	opacity: 0.9;
+	}
+h1,h2,h3 {
+  color: #FFF;
+  font-family: "Monserrat", san-serif;
+  font-size: 32px;
+  padding-top: 100px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 60%;
+}
+p { 
+  color: #FFF
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.7em;
+  text-align: left;
+  width: 100%;
+form { 
+  padding: 20px
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: salmon;
+  border: none;
+}
+button:hover {
+  background: light-grey;
+}
