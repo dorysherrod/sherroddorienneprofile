@@ -1,36 +1,50 @@
-<!DOCTYPE>
+!DOCTYPE>
 <html>
 		<head>
 <title>SherrodDoriennePortfoilio</title>
-<link rel=“stylesheet” type=“type/css” href=“stylesheet.css”></link>
+<link 
+	rel=“/stylesheet” 
+	type=“type/css”
+ 	href=“stylesheet.css> 
 <script src=“index3.js”></script>
 <link href="https://fonts.googleapis.com/css?”
-	family=“Montserrat" 
+	family=“Montserrat"
 	rel="stylesheet">
 		</head>
 		<body>
 <div class=“header”>
-<h1>Dorienne Sherrod Portfolio</h1>
+<h1>Dorienne Sherrod Portfolio!</h1>
 <hr/ >
-<p> Welcome to my Profile! I begin my coding career at Grand Circus in a couple of weeks and excited to start my journey!</p>
-<nav>
-  <ul>
-    <li><a href="#">About Me</a></li>
-    <li><a href=“#”>Projects</a><li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-<div class= “image”>
-<img src=“Users/doriennesherrod/Desktop/SherrodDorienneProfile/dfish.jpeg” alt=“ocean with blue fish” style=“width:200px; hieght:128px;”/>
-<img src=/Users/doriennesherrod/Desktop/SherrodDorienneProfile/mountainview.JPG” alt= “grand canyon”style=“width:200px; height:128px;/>
+<blockqoute>Just keep swimming, <br>
+	just keep swimming! <br> </blockqoute>
+<a  href="image1.gif">
+	<img src="image1.gif" alt="Dory the fish" width="130" height="130">
+</a>
+<div class="navigation">
+	<nav>
+		<ul>
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="aboutme">About Me</a></li>
+			<li>Projects</li>
+			<li><a href="contactme">Contact Me</a></li>
+		</ul>
+	</nav>
+</div>
+<p> Welcome to my Profile! </br> I begin my web developement bootcamp at Grand Circus in a couple of weeks  and excited to start my journey!</p>
+<div id="images_hz">
+	<img src="tpc.jpg" alt="group photo" width="250" height="250">
+	<img src="scranton.JPG" alt="welcome sign of Scranton" width="250" height="250"></hr>
+	<img src="mountainview.JPG" alt="The Grand Canyon" width="250" height="250">
+	<img src="asufb.JPG" alt="asu football game" width="250" height="250">
+</div>
 <hr/>
 <h2>About Me </h2>
 <p> Basic facts about me </p>
 	<ol>
 	<li>I graduated from Arizona State with a degree in Global Health and Public Policy</li>
-	<li>I am from Canton, Michigan</li> 
-	<li>I interned for The Parade Company last year</li> 
-	<li> I love kickboxing and running </li> 
+	<li>I am from Canton, Michigan</li>
+	<li>I interned for The Parade Company last year</li>
+	<li> I love kickboxing and running </li>
 	<li>I love planning events and going to music festivals</li>
 	</ol>
 <a
@@ -41,17 +55,27 @@ href=“https://www.linkedin.com/in/dorienne-sherrod-21a5a4112/“>Connect to my
 <div class=“footer”>
 	<div class=“container”>
 <hr/>
-<h3>Contact </h3>
-<form action=“/action_page.php”>
-   <fieldset>
-	First name:<br> 
-	<input type=“text” name=“firstname” value=“text”><br>
-	Last name:<br>
-	<input type=“text” name=“lastname” value=“text”><br>
-	Email Adress:<br>
-	<input type=“text” name=“emailaddress” value=“text”><br><br>
-	
-  </fieldset>
+<h3>Contact </h3><strong>
+<form id="contact_form" action="action_page.php" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
+  <div class="row">
+    <label class="required" for="name">Your name:</label><br />
+    <input id="name" name="name" type="text" value="" size="30" /><br />
+    <span id="name_validation" class="error"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="email">Your email:</label><br />
+    <input id="email" name="email" type="text" value="" size="30" /><br />
+    <span id="email_validation" class="error"></span>
+  </div>
+  <div class="row">
+    <label class="required" for="message">Your message:</label><br />
+    <textarea id="message" name="message" rows="7" cols="30"></textarea><br />
+    <span id="message_validation" class="error"></span>
+  </div>
+
+    <input type="submit" value="Send email" />
+</form>
+
 </form>
 <button type=“submit” form=“form1” value=“Submit”>Submit</button>
 # Create button with javascript
