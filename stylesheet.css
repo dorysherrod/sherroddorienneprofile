@@ -1,12 +1,16 @@
 body {
-	background-color: purple;
+	background- image: url(dfish.jpeg);
 	background-repeat: repeat-x;
 	background-position: right top;
-	background-attachment: fixed; 
+	background-size: cover;
+	background-attachment: fixed;
+	height: auto;
+	width: auto;
 	opacity: 0.9;
 	}
-h1,h2,h3 {
-  color: #FFF;
+	/* Add the ID selector */
+h1 {
+  color: #FFFF;
   font-family: "Monserrat", san-serif;
   font-size: 32px;
   padding-top: 100px;
@@ -14,7 +18,53 @@ h1,h2,h3 {
   text-transform: uppercase;
   width: 60%;
 }
-p { 
+img {
+    border-radius: 8px;
+}
+ul {
+	font-family:Georgia,sans-serif;
+	font-size:18px
+	text-align: center;
+	text-transform: uppercase;
+	list-style-type: none;
+	margin: 0
+	padding: 0
+	width: 200px
+	background-color:rgba(108, 106, 160, 0.5);
+}
+li a {
+	li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color:rgb(55, 107, 229);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#images_hz {
+	border: 1px
+	solid #ddd;
+	border-radius: 6px;
+	padding: 5px
+	width: 960px;
+	height: auto;
+	overflow: hidden;
+}
+
+#images_hz img {
+display: inline;
+margin: 0 10px;}
+
+p* {
   color: #FFF
   font-family: Roboto, sans-serif;
   font-size: 20px;
@@ -22,15 +72,22 @@ p {
   line-height: 1.7em;
   text-align: left;
   width: 100%;
-form { 
-  padding: 20px
-  margin-top: 20px;
-  line-height: 60px;
-  font-weight: bold;
-  padding: 0 40px;
-  background: salmon;
-  border: none;
+
+form{
+#email_validation, #name_validation {
+    display:none;
 }
-button:hover {
-  background: light-grey;
+
+label.required:after {
+  content:'*';
+  color:red;
+}
+
+span.error {
+  background-color:#FFDFDF;
+  color:red;
+}
+.row {
+  margin:5px;
+}
 }
